@@ -20,8 +20,8 @@ jobs:
       matrix:
         include:
           - platform: "ubuntu-22.04"
-            args: "--bundles deb"
-            
+            args: "--bundles appimage"
+
     runs-on: ${{ matrix.platform }}
     steps:
       - uses: actions/checkout@v4
